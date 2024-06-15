@@ -17,7 +17,7 @@ cd MarketPeak_Ecommerce
 git init
 ```
 
-![Git_Initialize](/MarketPeak_Ecommerce/Img/Git_Initialize.png)
+![Git_Initialize](/Img/Git_Initialize.png)
 
 ![Git_Initialize](/MarketPeak_Ecommerce/Img/Git_Initialize.png)
 
