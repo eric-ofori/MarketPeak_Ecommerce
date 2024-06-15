@@ -1,10 +1,10 @@
-Capstone Project: E-Commerce Platform Deployment with Git, Linux and AWS
+#Capstone Project: E-Commerce Platform Deployment with Git, Linux and AWS
 
-Scenario:
+###Scenario:
 
 You have been assigned to develop an e-commerce website for a new marketplace named "MarketPeak". This platform will feature product listings, a shopping cart and user authentication. Your objective is to utilized Git for version control, develop the platform in a Linux environment and deploy it on an AWS EC2 instance.
 
-1. Implementing Version Control with Git
+###1. Implementing Version Control with Git
 
 1.1. Initialize Git Repository
 
@@ -96,7 +96,7 @@ git push -u origin main
 ![GitPush_Main](/Img/GitPush_Main.png)
 
 
-2. AWS Deployment
+###2. AWS Deployment
 
 To deploy **_"MarketPeak_Ecommerce"_** platform, you'll start by setting up an Amazon EC2 instance:
 
@@ -223,7 +223,7 @@ sudo systemctl reload httpd
 ![First_Deployed_Website](/Img/First_Deployed_Website.png)
 
 
-3. Continuous Integration and Deployment Workflow
+###3. Continuous Integration and Deployment Workflow
 
 Step 1: Developing New features and Fixes
 
@@ -360,7 +360,7 @@ Then now you can restart the web server and open your web browser to see if the 
 ![site_change_5](/Img/site_change_5.png)
 
 
-4. Capstone Submission
+##4. Capstone Submission
 
 + Provide a detailed README.md file documenting the steps you took to deploy the entire flow.
 
