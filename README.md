@@ -19,13 +19,11 @@ git init
 
 ![Git_Initialize](/Img/Git_Initialize.png)
 
-![Git_Initialize](/MarketPeak_Ecommerce/Img/Git_Initialize.png)
-
 1.2. Obtain and Prepare the E-Commerce Website Template
 + Download the specific template from here: https://www.tooplate.com/view/2130-waso-strategy 
 + Extract the downloaded template into your project directory, **_"MarketPeak_Ecommerce"_**
 
-![MarketPeak_Template](/MarketPeak_Ecommerce/Images/MarketPeak_Template.png)
+![MarketPeak_Template](/Img/MarketPeak_Template.png)
 
 1.3. Stage and Commit the Template to Git
 
@@ -41,7 +39,7 @@ git commit -m "Initial commit with basic e-commerce site structure"
 
 # Make sure to replace "YourUsername" with your actual GitHub username and "youremail@example.com" with your actual email used for your GitHub account
 ```
-![Git_add_config_commit](/MarketPeak_Ecommerce/Images/Git_add_config_commit.png)
+![Git_add_config_commit](/Img/Git_add_config_commit.png)
 
 1.4. Push the code to your GitHub repository
 
@@ -49,25 +47,25 @@ git commit -m "Initial commit with basic e-commerce site structure"
 
 + Create a remote repository on GitHub by loggining into your GitHub account and creating a new repository name **_"MarketPeak_Ecommerce"_**. Leave the repository empty without initializing it with a README, .gitignore or license.
 
-![MarketPeak_GitHub_Repo_1](/MarketPeak_Ecommerce/Images/MarketPeak_GitHub_Repo_1.png)
+![MarketPeak_GitHub_Repo_1](/Img/MarketPeak_GitHub_Repo_1.png)
 
-![MarketPeak_GitHub_Repo_2](/MarketPeak_Ecommerce/Images/MarketPeak_GitHub_Repo_2.png)
+![MarketPeak_GitHub_Repo_2](/Img/MarketPeak_GitHub_Repo_2.png)
 
-![MarketPeak_GitHub_Repo_3](/MarketPeak_Ecommerce/Images/MarketPeak_GitHub_Repo_3.png)
+![MarketPeak_GitHub_Repo_3](/Img/MarketPeak_GitHub_Repo_3.png)
 
 + Link your local repository to GitHub by issuing the following command in your terminal within your project directory, add the remote reposity URL to your local repository configuration
 
 ```
 git remote add origin https://github.com/your-git-username/MarketPeak_Ecommerce.git 		# Make usre to replace "your-git-username" with your actual git username
 ```
-![Link_LocalRepo_To_GitHub](/MarketPeak_Ecommerce/Images/Link_LocalRepo_To_GitHub.png)
+![Link_LocalRepo_To_GitHub](/Img/Link_LocalRepo_To_GitHub.png)
 
 + Push your code by uploading your local repository content to GitHub using this command:
 
 ```
 git push -u origin main
 ```
-![Link_LocalRepo_To_GitHub](/MarketPeak_Ecommerce/Images/Link_LocalRepo_To_GitHub.png)
+![Link_LocalRepo_To_GitHub](/Img/Link_LocalRepo_To_GitHub.png)
 
 You will realise that you get an error message like the one below:
 
@@ -80,14 +78,14 @@ This is because the main branch does not exist locally and we need to correct th
 git branch
 ```
 
-![Verify_Branch](/MarketPeak_Ecommerce/Images/Verify_Branch.png)
+![Verify_Branch](/Img/Verify_Branch.png)
 
 + Rename master branch to main using this command:
 
 ```
 git branch -m master main
 ```
-![Rename_Branch](/MarketPeak_Ecommerce/Images/Rename_Branch.png)
+![Rename_Branch](/Img/Rename_Branch.png)
 
 + Now you can push your code by uploading your local repository content to GitHub using this command:
 
@@ -95,7 +93,7 @@ git branch -m master main
 git push -u origin main
 ```
 
-![GitPush_Main](/MarketPeak_Ecommerce/Images/GitPush_Main.png)
+![GitPush_Main](/Img/GitPush_Main.png)
 
 
 2. AWS Deployment
@@ -106,17 +104,17 @@ To deploy **_"MarketPeak_Ecommerce"_** platform, you'll start by setting up an A
 
 + Log in to the AWS Management Console
 
-![AWS_Login](/MarketPeak_Ecommerce/Images/AWS_Login.png)
+![AWS_Login](/Img/AWS_Login.png)
 
 + Launch an EC2 instance using an Amazon Linux AMI.
 
-![EC2_Launch_1](/MarketPeak_Ecommerce/Images/EC2_Launch_1.png)
+![EC2_Launch_1](/Img/EC2_Launch_1.png)
 
-![EC2_Launch_2](/MarketPeak_Ecommerce/Images/EC2_Launch_2.png)
+![EC2_Launch_2](/Img/EC2_Launch_2.png)
 
 + Connect to the instance using SSH
 
-![SSH_Connect](/MarketPeak_Ecommerce/Images/SSH_Connect.png)
+![SSH_Connect](/Img/SSH_Connect.png)
 
 2.2 Clone the repository on the Linux Server
 
@@ -126,7 +124,7 @@ To deploy **_"MarketPeak_Ecommerce"_** platform, you'll start by setting up an A
 
 2. Select the 'code' as in the image below:
 
-![Link_LocalRepo_To_GitHub](/MarketPeak_Ecommerce/Images/Link_LocalRepo_To_GitHub.png)
+![Link_LocalRepo_To_GitHub](/Img/Link_LocalRepo_To_GitHub.png)
 
 HTTPS Method:
 
@@ -136,9 +134,9 @@ For repositories that you plan to clone without setting up SSH key, use HTTPS UR
 git clone https://github.com/yourusername/MarketPeak_Ecommerce.git
 ```
 
-![Git_Clone_1](/MarketPeak_Ecommerce/Images/Git_Clone_1.png)
+![Git_Clone_1](/Img/Git_Clone_1.png)
 
-![Git_Clone_2](/MarketPeak_Ecommerce/Images/Git_Clone_2.png)
+![Git_Clone_2](/Img/Git_Clone_2.png)
 
 **After issuing the git clone command you realise there is an error. The error tells us that no such directory exists. This is because the git command cannot be executed. Since GIT as program has not been install the command cannot be executed. As such we need to install git before we can git clone the remote repository. We can do that by first updating our dependencies and then installing git using the following commnds:
 
@@ -146,13 +144,13 @@ git clone https://github.com/yourusername/MarketPeak_Ecommerce.git
 sudo yum update -y
 ```
 
-![Update](/MarketPeak_Ecommerce/Images/Update.png)
+![Update](/Img/Update.png)
 
 ```
 sudo yum git install -y
 ```
 
-![Git_Install](/MarketPeak_Ecommerce/Images/Git_Install.png)
+![Git_Install](/Img/Git_Install.png)
 
 ```
 git -v
@@ -163,9 +161,9 @@ Now we can git clone our remote repository
 ```
 git clone https://github.com/yourusername/MarketPeak_Ecommerce.git
 ```
-![Git_Clone_Success](/MarketPeak_Ecommerce/Images/Git_Clone_Success.png)
+![Git_Clone_Success](/Img/Git_Clone_Success.png)
 
-![Git_Clone_Succes_Verification](/MarketPeak_Ecommerce/Images/Git_Clone_Succes_Verification.png)
+![Git_Clone_Succes_Verification](/Img/Git_Clone_Succes_Verification.png)
 
 2.3 Install a Web Server on EC2
 
@@ -179,9 +177,9 @@ sudo yum install httpd -y
 sudo systemctl start httpd
 sudo systemctl enable httpd
 ```
-![HTTPD_Install_1](/MarketPeak_Ecommerce/Images/HTTPD_Install_1.png)
+![HTTPD_Install_1](/Img/HTTPD_Install_1.png)
 
-![HTTPD_Install_2](/MarketPeak_Ecommerce/Images/HTTPD_Install_2.png)
+![HTTPD_Install_2](/Img/HTTPD_Install_2.png)
 
 2.4 Configure httpd for Website
 
@@ -194,7 +192,7 @@ sudo rm -rf /var/www/html/*
 sudo cp -r ~/MarketPeak_Ecommerce/* /var/www/html/
 ```
 
-![MarketPeak_Standard_Directory](/MarketPeak_Ecommerce/Images/MarketPeak_Standard_Directory.png)
+![MarketPeak_Standard_Directory](/Img/MarketPeak_Standard_Directory.png)
 
 + The directory **_/var/www/html/_** is a standard directory structure on Linux systems that host web content, particularly the **_Apache HTTPD Server_**
 
@@ -204,7 +202,7 @@ sudo cp -r ~/MarketPeak_Ecommerce/* /var/www/html/
 sudo systemctl reload httpd
 ```
 
-![httpd_reload](/MarketPeak_Ecommerce/Images/httpd_reload.png)
+![httpd_reload](/Img/httpd_reload.png)
 
 2.5 Access Website from Browser
 
@@ -216,13 +214,13 @@ sudo systemctl reload httpd
 
 + To solve this issue we need to edit the inbound rules of the security groug for our AWS EC2 instance to allow http communication.
 
-![Editing_Inbound_Rules_1](/MarketPeak_Ecommerce/Images/Editing_Inbound_Rules_1.png)
+![Editing_Inbound_Rules_1](/Img/Editing_Inbound_Rules_1.png)
 
-![Editing_Inbound_Rules_2](/MarketPeak_Ecommerce/Images/Editing_Inbound_Rules_2.png)
+![Editing_Inbound_Rules_2](/Img/Editing_Inbound_Rules_2.png)
 
 + After editing the inbound rules of the AWS EC2 instance you can refresh your web browser and having the MarketPeak Ecommerce site up and running
 
-![First_Deployed_Website](/MarketPeak_Ecommerce/Images/First_Deployed_Website.png)
+![First_Deployed_Website](/Img/First_Deployed_Website.png)
 
 
 3. Continuous Integration and Deployment Workflow
@@ -235,7 +233,7 @@ Step 1: Developing New features and Fixes
 git branch development
 git checkout development
 ```
-![Dev_branch](/MarketPeak_Ecommerce/Images/Dev_branch.png)
+![Dev_branch](/Img/Dev_branch.png)
 
 + Implement changes on the development branch by adding new features or bug fixes. This might include updating web pages, adding new products or fixing known issues.
 
@@ -246,7 +244,7 @@ Step 2: Version Control with Git
 ```
 git add .
 ```
-![Dev_Git_Staging](/MarketPeak_Ecommerce/Images/Dev_Git_Staging.png)
+![Dev_Git_Staging](/Img/Dev_Git_Staging.png)
 
 + Commit the changes by using the command below:
 
@@ -254,7 +252,7 @@ git add .
 git commit -m "Add new features or fix bugs"
 ```
 
-![Dev_Commit](/MarketPeak_Ecommerce/Images/Dev_Commit.png)
+![Dev_Commit](/Img/Dev_Commit.png)
 
 + Push changes to the remote repository on GitHub:
 
@@ -262,17 +260,17 @@ git commit -m "Add new features or fix bugs"
 git push origin development
 ```
 
-![Dev_Push](/MarketPeak_Ecommerce/Images/Dev_Push.png)
+![Dev_Push](/Img/Dev_Push.png)
 
 Step 3: On GitHub create a pull request to merge the development branch into the main branch. This is crucial for code review and maintaining code quality
 
-![Pull_Request_1](/MarketPeak_Ecommerce/Images/Pull_Request_1.png)
+![Pull_Request_1](/Img/Pull_Request_1.png)
 
-![Pull_Request_2](/MarketPeak_Ecommerce/Images/Pull_Request_2.png)
+![Pull_Request_2](/Img/Pull_Request_2.png)
 
 + Review the changes for any potential issues. Once you are satisfied that there are not conflicts or issues, merge the pull request into the main branch to incorporate the new features or fixes into the production codebase.
 
-![Dev_Merge](/MarketPeak_Ecommerce/Images/Dev_Merge.png)
+![Dev_Merge](/Img/Dev_Merge.png)
 
 ```
 git checkout main
@@ -281,7 +279,7 @@ git merge development
 
 + Checkout of development branch and switch to the main branch
 
-![Queer](/MarketPeak_Ecommerce/Images/Queer.png)
+![Queer](/Img/Queer.png)
 
 + Push the merged changes to GitHub to ensure that your local branch, now containing the updates is pushed to the remote repository on GitHub
 
@@ -289,7 +287,7 @@ git merge development
 git push origin main
 ```
 
-![Push_Reject](/MarketPeak_Ecommerce/Images/Push_Reject.png)
+![Push_Reject](/Img/Push_Reject.png)
 
 + You realize that there is an error message that some refs failed to be pushed to the remote GitHub repository. This is because you have changes the remote repository that are not in the local repository. As such we have to pull or fetch the contents of the remote main branch to the local before pushing. You can do this in two ways:
 
@@ -304,19 +302,19 @@ git fetch origin
 
 If there are not conflicts then you can go ahead and merge origin with main. But if there are you will need to solve them.
 
-![Git_Fetch_Main](/MarketPeak_Ecommerce/Images/Git_Fetch_Main.png)
+![Git_Fetch_Main](/Img/Git_Fetch_Main.png)
 
 ```
 git merge origin/main
 ```
 
-![Git_Merge_Origin_Main](/MarketPeak_Ecommerce/Images/Git_Merge_Origin_Main.png)
+![Git_Merge_Origin_Main](/Img/Git_Merge_Origin_Main.png)
 
 ```
 git push origin main
 ```
 
-![GitHub_Push_local_Main](/MarketPeak_Ecommerce/Images/GitHub_Push_local_Main.png)
+![GitHub_Push_local_Main](/Img/GitHub_Push_local_Main.png)
 
 Step 4: Deploying Updates to the Production Server
 
@@ -326,7 +324,7 @@ Step 4: Deploying Updates to the Production Server
 git pull origin main
 ```
 
-![Updates_Production_Server](/MarketPeak_Ecommerce/Images/Updates_Production_Server.png)
+![Updates_Production_Server](/Img/Updates_Production_Server.png)
 
 + Restart the web server to apply the changes
 
@@ -334,7 +332,7 @@ git pull origin main
 sudo systemctl reload httpd
 ```
 
-![Update_Server_Reload](/MarketPeak_Ecommerce/Images/Update_Server_Reload.png)
+![Update_Server_Reload](/Img/Update_Server_Reload.png)
 
 Step 5: Testing the New Changes
 
@@ -347,19 +345,19 @@ sudo rm -rf /var/www/html/*
 sudo cp -r ~/MarketPeak_Ecommerce/* /var/www/html/
 ```
 
-![Recopy_Var_www_html](/MarketPeak_Ecommerce/Images/Recopy_Var_www_html.png)
+![Recopy_Var_www_html](/Img/Recopy_Var_www_html.png)
 
 Then now you can restart the web server and open your web browser to see if the changes have taken effect
 
-![site_change_1](/MarketPeak_Ecommerce/Images/site_change_1.png)
+![site_change_1](/Img/site_change_1.png)
 
-![site_change_2](/MarketPeak_Ecommerce/Images/site_change_2.png)
+![site_change_2](/Img/site_change_2.png)
 
-![site_change_3](/MarketPeak_Ecommerce/Images/site_change_3.png)
+![site_change_3](/Img/site_change_3.png)
 
-![site_change_4](/MarketPeak_Ecommerce/Images/site_change_4.png)
+![site_change_4](/Img/site_change_4.png)
 
-![site_change_5](/MarketPeak_Ecommerce/Images/site_change_5.png)
+![site_change_5](/Img/site_change_5.png)
 
 
 4. Capstone Submission
@@ -368,6 +366,6 @@ Then now you can restart the web server and open your web browser to see if the 
 
 + Include any troubleshooting or challenges you faced and how you overcame them.
 
-![README_1](/MarketPeak_Ecommerce/Images/README_1.png)
+![README_1](/Img/README_1.png)
 
-![README_2](/MarketPeak_Ecommerce/Images/README_2.png)
+![README_2](/Img/README_2.png)
