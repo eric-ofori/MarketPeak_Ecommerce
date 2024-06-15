@@ -17,7 +17,7 @@ cd MarketPeak_Ecommerce
 git init
 ```
 
-![Git_Initialize](/MarketPeak_Ecommerce/Images/Git_Initialize.png)
+![Git_Initialize](/MarketPeak_Ecommerce/Img/Git_Initialize.png)
 
 1.2. Obtain and Prepare the E-Commerce Website Template
 + Download the specific template from here: https://www.tooplate.com/view/2130-waso-strategy 
