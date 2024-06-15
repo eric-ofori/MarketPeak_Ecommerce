@@ -1,12 +1,12 @@
 # Capstone Project: E-Commerce Platform Deployment with Git, Linux and AWS
 
-###Scenario:
+### Scenario:
 
 You have been assigned to develop an e-commerce website for a new marketplace named "MarketPeak". This platform will feature product listings, a shopping cart and user authentication. Your objective is to utilized Git for version control, develop the platform in a Linux environment and deploy it on an AWS EC2 instance.
 
-###1. Implementing Version Control with Git
+## 1. Implementing Version Control with Git
 
-1.1. Initialize Git Repository
+### 1.1. Initialize Git Repository
 
 + Begin by creating a project directory name **_"MarketPeak_Ecommerce"_**
 + Inside your **_"MarketPeak_Ecommerce"_** directory, initialize a Git repository to manage your version control
@@ -19,13 +19,13 @@ git init
 
 ![Git_Initialize](/Img/Git_Initialize.png)
 
-1.2. Obtain and Prepare the E-Commerce Website Template
+### 1.2. Obtain and Prepare the E-Commerce Website Template
 + Download the specific template from here: https://www.tooplate.com/view/2130-waso-strategy 
 + Extract the downloaded template into your project directory, **_"MarketPeak_Ecommerce"_**
 
 ![MarketPeak_Template](/Img/MarketPeak_Template.png)
 
-1.3. Stage and Commit the Template to Git
+### 1.3. Stage and Commit the Template to Git
 
 + Add your website files to the Git repository.
 + Set your Git global configuration with your username and email.
@@ -41,7 +41,7 @@ git commit -m "Initial commit with basic e-commerce site structure"
 ```
 ![Git_add_config_commit](/Img/Git_add_config_commit.png)
 
-1.4. Push the code to your GitHub repository
+### 1.4. Push the code to your GitHub repository
 
 ***For versioning and collaboration purposes we need to push the code to a remote repository on GitHub***
 
@@ -96,11 +96,11 @@ git push -u origin main
 ![GitPush_Main](/Img/GitPush_Main.png)
 
 
-###2. AWS Deployment
+## 2. AWS Deployment
 
 To deploy **_"MarketPeak_Ecommerce"_** platform, you'll start by setting up an Amazon EC2 instance:
 
-2.1. Set Up an AWS EC2 Instance
+### 2.1. Set Up an AWS EC2 Instance
 
 + Log in to the AWS Management Console
 
@@ -116,7 +116,7 @@ To deploy **_"MarketPeak_Ecommerce"_** platform, you'll start by setting up an A
 
 ![SSH_Connect](/Img/SSH_Connect.png)
 
-2.2 Clone the repository on the Linux Server
+### 2.2 Clone the repository on the Linux Server
 
 **Before deploying your e-commerce platform, you need to clone the GitHub repository to your AWS EC2 instance. This process involves authenticating with GitHub and choosing between two primary methods of cloning a repository: SSH and HTTPS. We will use the HTTPS method in cloning our repository**
 
@@ -165,7 +165,7 @@ git clone https://github.com/yourusername/MarketPeak_Ecommerce.git
 
 ![Git_Clone_Succes_Verification](/Img/Git_Clone_Succes_Verification.png)
 
-2.3 Install a Web Server on EC2
+### 2.3 Install a Web Server on EC2
 
 **_Apache HTTP Server (httpd)_** is a widely used web server that serves HTML files and content over the internet. Installing it on Linux EC2 server allows you to host **_"MarketPeak_Ecommerce"_** site:
 
@@ -181,7 +181,7 @@ sudo systemctl enable httpd
 
 ![HTTPD_Install_2](/Img/HTTPD_Install_2.png)
 
-2.4 Configure httpd for Website
+### 2.4 Configure httpd for Website
 
 + To serve the website from the EC2 instance, **_httpd_** to point to the directory on the Linux server where the websier code files are stored, which is usually in **_/var/wwww/html
 
@@ -204,7 +204,7 @@ sudo systemctl reload httpd
 
 ![httpd_reload](/Img/httpd_reload.png)
 
-2.5 Access Website from Browser
+### 2.5 Access Website from Browser
 
 + With **_httpd_** configured and website files in place, **_MarketPeak Ecommerce_** platform is now live on the internet:
 
@@ -223,9 +223,9 @@ sudo systemctl reload httpd
 ![First_Deployed_Website](/Img/First_Deployed_Website.png)
 
 
-###3. Continuous Integration and Deployment Workflow
+## 3. Continuous Integration and Deployment Workflow
 
-Step 1: Developing New features and Fixes
+### Step 1: Developing New features and Fixes
 
 + Create a Developmnet Branch: Begin your development work by creating a separate branch. This isolates new features and bug fixes from the stable version of your website
 
@@ -237,7 +237,7 @@ git checkout development
 
 + Implement changes on the development branch by adding new features or bug fixes. This might include updating web pages, adding new products or fixing known issues.
 
-Step 2: Version Control with Git
+### Step 2: Version Control with Git
 
 + Stage the changes made to the staging area in Git by using this command:
 
@@ -262,7 +262,7 @@ git push origin development
 
 ![Dev_Push](/Img/Dev_Push.png)
 
-Step 3: On GitHub create a pull request to merge the development branch into the main branch. This is crucial for code review and maintaining code quality
+### Step 3: On GitHub create a pull request to merge the development branch into the main branch. This is crucial for code review and maintaining code quality
 
 ![Pull_Request_1](/Img/Pull_Request_1.png)
 
@@ -316,7 +316,7 @@ git push origin main
 
 ![GitHub_Push_local_Main](/Img/GitHub_Push_local_Main.png)
 
-Step 4: Deploying Updates to the Production Server
+### Step 4: Deploying Updates to the Production Server
 
 + Pull the latest chages to your production server by SSH into your AWS EC2 instance. Navigate to the website's directory and pull the latest changes from the main branch
 
@@ -334,7 +334,7 @@ sudo systemctl reload httpd
 
 ![Update_Server_Reload](/Img/Update_Server_Reload.png)
 
-Step 5: Testing the New Changes
+### Step 5: Testing the New Changes
 
 Open a web browser and navigate to the EC2 instance public IP. Test the new features or fixes to ensure they work or have taken effect.
 
@@ -360,7 +360,7 @@ Then now you can restart the web server and open your web browser to see if the 
 ![site_change_5](/Img/site_change_5.png)
 
 
-##4. Capstone Submission
+## 4. Capstone Submission
 
 + Provide a detailed README.md file documenting the steps you took to deploy the entire flow.
 
