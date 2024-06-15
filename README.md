@@ -1,4 +1,4 @@
-#Capstone Project: E-Commerce Platform Deployment with Git, Linux and AWS
+# Capstone Project: E-Commerce Platform Deployment with Git, Linux and AWS
 
 ###Scenario:
 
